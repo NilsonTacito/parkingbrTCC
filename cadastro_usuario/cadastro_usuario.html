@@ -1,0 +1,339 @@
+<!-- By: Jardel -->
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="https://www.w3.org/1999/xhtml">
+<head>
+    <!-- Required meta tags -->
+    <title>ParkingBr</title>
+    <meta charset="UTF-8"/>
+
+    <!-- Google Fonts - ROBOTO -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"/>
+
+    <!--Bootsrap 4 CDN-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
+    
+    <!--Fontawesome CDN-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
+
+    <!--Custom styles-->
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+</head>
+
+<body>
+
+    <div class="top bg-dark text-light py-3" id="barra_navegacao">
+        <div class="container-nav topheader">
+            <div class="d-flex justify-content-between">
+                <div class="center">
+                    <h4>ParkingBr</h4>
+                </div>
+                <div class="kanan">
+                    <nav class="nav">
+                        <a class="nav-link active" href="../../Project-TCC/login/tela_login.html" id="nav1">Home</a>
+                        <a class="nav-link" href="../../Project-TCC/info_gestor/info_gestor.html" id="nav2">Seja um Parceiro</a>
+                        <a class="nav-link" href="../../Project-TCC/info_sobre/info_sobre.html" id="nav4">Sobre</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="container-fluid">
+    <form class="row" method="POST" data-toggle="validator" role="form" id="myForm" name="myForm">
+        <div class="col-12 col-lg-4">
+            <fieldset>
+
+                <!-- Form Name -->
+                <div class="form-row">
+                    <legend>Cadastro de Usuário</legend>
+                </div>
+                    
+                <div class="form-row">
+                    <div class="col col-lg-12">
+                        <div class="form-group">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="pessoa" value="opcaoPf" id="id_pessoaFisica" checked/>
+                                <label class="form-check-label" for="pessoaFisica">Pessoa Física</label>
+                            </div>
+                                  
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="pessoa" value="opcaoPj" id="id_pessoaJuridica"/>
+                                <label class="form-check-label" for="pessoaJuridica">Pessoa Jurídica</label>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="pf">
+                    <div class="form-row">  
+                        <div class="col col-lg-12">
+                            <div class="form-group">    
+                                <label for="id_nome" class="control-label">Nome</label>              
+                                <input type="text" name="nome" maxlength="30" autofocus="" placeholder="Nome" class="form-control" id="id_nome"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pf">
+                    <div class="form-row">  
+                        <div class="col col-lg-12">
+                            <div class="form-group">
+                                <label for="id_sobrenome" class="control-label">Sobrenome</label>                   
+                                <input type="text" name="sobrenome" maxlength="100" placeholder="Sobrenome" class="form-control" id="id_sobrenome"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pf">
+                    <div class="form-row">  
+                        <div class="col col-lg-12">
+                            <div class="form-group">
+                                <label for="id_cpf" class="control-label">CPF</label>                   
+                                <input type="text" name="cpf" maxlength="15" placeholder="CPF" class="form-control" id="id_cpf"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pj">
+                    <div class="form-row">  
+                        <div class="col col-lg-12">
+                            <div class="form-group">
+                                <label for="id_cnpj" class="control-label">CNPJ</label>                   
+                                <input type="text" name="cnpj" maxlength="15" placeholder="CNPJ" class="form-control" id="id_cnpj"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pj">
+                    <div class="form-row">  
+                        <div class="col col-lg-12">
+                            <div class="form-group">
+                                <label for="id_razao_social" class="control-label">Razão Social</label>                   
+                                <input type="text" name="cnpj" maxlength="15" placeholder="Razão Social" class="form-control" id="id_razao_social"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="col col-lg-12">
+                        <div class="form-group">
+                            <label for="id_email" class="control-label">Endereço de email</label>
+                            <input type="email" class="form-control" id="id_email" aria-describedby="emailHelp" placeholder="nome@email.com" required/>
+                            <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col col-lg-12">
+                        <div class="form-group">
+                            <label for="id_telefone" class="control-label">Telefone</label>
+                            <input type="text" class="form-control" placeholder="Telefone" id="id_telefone" pattern="\([0-9]{2}\)[0-9]{4,6}-[0-9]{3,4}$" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col col-lg-12">
+                        <div class="form-group mb-1">
+                            <label for="pass" class="control-label mb-0">Senha</label>
+                        </div>
+                    </div>
+                </div>
+                   
+                <div class="form-row">
+                    <div class="col col-lg-12">
+                        <div class="form-group">
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <input type="password" class="form-control" id="pass" placeholder="Senha" required/>
+                                        <div class="input-group-text">
+                                            <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png" id="olho" class="olho">
+                                        </div>                                       
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <h5>Cadastrar veículo agora:</h5>
+                </div>
+
+                <div class="form-row">
+                    <div class="col col-lg-12">
+                        <div class="form-group">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="decisao_opcao" value="opcaoSim" id="id_sim"/>
+                                <label class="form-check-label" for="id_sim">Sim</label>
+                            </div>
+                                      
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="decisao_opcao" value="opcaoNao" id="id_nao" checked/>
+                                <label class="form-check-label" for="id_nao">Não</label>
+                            </div>
+
+                            <small id="emailHelp" class="form-text text-muted">Caso cadastre o veículo neste momento, será obrigatório na reserva de vaga.</small>
+                        </div>
+                    </div>
+                </div> 
+                <div class="cadastro_veiculo">
+                    <div class="form-row">
+                        <h5>Tipo:</h5>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col col-lg-12">
+                            <div class="form-group">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="decisao_veiculo" value="opcaoCarro" id="id_carro"/>
+                                    <label class="form-check-label" for="id_carro">Carro</label>
+                                </div>
+                                        
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="decisao_veiculo" value="opcaoMoto" id="id_moto"/>
+                                    <label class="form-check-label" for="id_moto">Moto</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">  
+                        <div class="col col-lg-12">
+                            <div class="form-group">    
+                                <label for="id_placa" class="control-label">Placa</label>              
+                                <input type="text" name="placa" maxlength="30" placeholder="Placa" class="form-control" id="id_placa"/>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">  
+                        <div class="col col-lg-12">
+                            <div class="form-group">    
+                                <label for="id_modelo" class="control-label">Modelo</label>              
+                                <input type="text" name="modelo" maxlength="30" placeholder="Modelo" class="form-control" id="id_modelo"/>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="form-row">  
+                        <div class="col col-lg-12">
+                            <div class="form-group">    
+                                <label for="id_ano" class="control-label">Ano</label>              
+                                <input type="text" name="ano" maxlength="30" placeholder="Ano" class="form-control" id="id_ano"/>
+                            </div>
+                        </div>
+                    </div>                   
+
+                    
+                    <div class="form-row">  
+                        <div class="col col-lg-12">
+                            <div class="form-group">    
+                                <label for="id_fabricante" class="control-label">Fabricante</label>              
+                                <input type="text" name="fabricante" maxlength="30" placeholder="Fabricante" class="form-control" id="id_fabricante"/>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="form-row">  
+                        <div class="col col-lg-12">
+                            <div class="form-group">    
+                                <label for="id_cor" class="control-label">Cor</label>              
+                                <input type="text" name="cor" maxlength="30" placeholder="Cor" class="form-control" id="id_cor"/>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+                    <div class="col col-lg-12">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </fieldset>
+        </div>
+    </form>
+</div>
+
+    <div class="top bg-dark text-light py-3 fixed-bottom" id="barra_navegacao">
+        <div class="container-nav topheader">
+            <div class="d-flex justify-content-between">
+                <div class="center">
+                    <h6>Application developed by Jardel Cunha for test</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    document.getElementById('olho').addEventListener('mousedown', function() {
+        document.getElementById('pass').type = 'text';
+    });
+
+    document.getElementById('olho').addEventListener('mouseup', function() {
+    document.getElementById('pass').type = 'password';
+    });
+
+    // Para que o password não fique exposto apos mover a imagem.
+    document.getElementById('olho').addEventListener('mousemove', function() {
+    document.getElementById('pass').type = 'password';
+    });
+</script>
+
+<!-- Include the validator and symbol of the phone-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.2/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.1/js/bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.1/css/bootstrap.min.css"/>
+
+<!------ Include the above in your HEAD tag ---------->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"/>
+
+<script>
+    // Habilitar campos com o Radio de PF e PJ
+    $(document).ready(function(){
+        $(".pj").hide();
+    });
+    $("input[type=radio]").on("change", function(){
+        if ($(this).val() == "opcaoPf"){
+            $(".pf").show();
+            $(".pj").hide(); 
+        } else if ($(this).val() == "opcaoPj"){
+            $(".pj").show(); 
+            $(".pf").hide();
+        }
+    });
+
+    // Habilitar cadastro do veículo
+    $(document).ready(function(){
+        $(".cadastro_veiculo").hide();
+    });
+    $("input[type=radio]").on("change", function(){
+        if ($(this).val() == "opcaoSim"){
+            $(".cadastro_veiculo").show();
+        } else if ($(this).val() == "opcaoNao"){
+            $(".cadastro_veiculo").hide();
+        }
+    });
+
+    // Validação Telefone
+    $('#myForm').validator();
+    $('#id_telefone').mask("(99) 99999-9999");
+    $('#id_cpf').mask("999.999.999-99");
+    $('#id_cnpj').mask("99. 999. 999/9999-99");
+    $('#id_ano').mask("9999");
+</script>
+
+</body>
+
+</html>

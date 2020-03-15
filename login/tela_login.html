@@ -1,0 +1,115 @@
+<!-- By: Jardel -->
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="https://www.w3.org/1999/xhtml">
+<head>
+	<!-- Required meta tags -->
+	<title>ParkingBr</title>
+	<meta charset="UTF-8"/>
+
+   <!-- Google Fonts - ROBOTO -->
+   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"/>
+   
+	<!--Bootsrap 4 CDN-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
+    
+    <!--Fontawesome CDN-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
+
+	<!--Custom styles-->
+	<link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+</head>
+
+<body>
+    <div class="top bg-dark text-light py-3" id="barra_navegacao">
+        <div class="container-nav topheader">
+            <div class="d-flex justify-content-between">
+                <div class="center">
+                    <h4>ParkingBr</h4>
+                </div>
+                <div class="kanan">
+					<nav class="nav" id="id_menu">						
+						<a class="nav-link active" href="../../Project-TCC/login/tela_login.html" id="nav1">Home</a>
+						<a class="nav-link" href="../../Project-TCC/info_gestor/info_gestor.html" id="nav2">Seja um Parceiro</a>
+						<a class="nav-link" href="../../Project-TCC/info_sobre/info_sobre.html" id="nav3">Sobre</a>
+					</nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="container overflow-auto">
+	<div class="d-flex justify-content-center h-100 mt-5">
+		<div class="card">
+			<div class="card-header">
+				<h3>Login</h3>
+				<div class="d-flex justify-content-end social_icon">
+					<span><i class="fab fa-facebook-square"></i></span>
+					<span><i class="fab fa-google-plus-square"></i></span>
+				</div>
+			</div>
+			<div class="card-body">
+				<form>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+						<input type="email" class="form-control" placeholder="email">
+						
+					</div>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-key"></i></span>
+						</div>
+						<input type="password" class="form-control" placeholder="senha">
+					</div>
+					<div class="row align-items-center remember">
+						<input type="checkbox">Lembrar de mim
+					</div>
+					<div class="form-group">
+						<input type="submit" value="Entrar" class="btn float-right login_btn">
+					</div>
+				</form>
+			</div>
+			<div class="card-footer" id="id_campo_inferior">
+				<div class="d-flex justify-content-center links">
+                    Ainda não tem conta?<a href="../../Project-TCC/cadastro_usuario/cadastro_usuario.html">Cadastre-se</a>
+				</div>
+				<div class="d-flex justify-content-center">
+					<a href="#fundo_modal" rel="modal:open">Esqueceu sua senha?</a>
+					<div id="fundo_modal" class="modal">
+						<div id="custom_modal">
+							<h4 id="esqueceu_senha">Esqueceu sua senha?</h4>
+							<div class="container-fluid">
+								<form action="" method="POST" id="id_form_recuperacao" class="row">
+									<input name="email_recu" style="max-width: 55%; float: left;" class="form-control" type="email" placeholder="Email" id="id_recuperacao" required/>
+									<button style="float: left; margin-left: 15px;" type="submit" class="btn btn-primary" id="button_custom">Enviar</button>
+								</form>
+							</div>
+						</div>								
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="top bg-dark text-light py-3 fixed-bottom" id="barra_navegacao">
+    <div class="container-nav topheader">
+        <div class="d-flex justify-content-between">
+            <div class="center">
+                <h6>Application developed by Jardel Cunha for test</h6>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------ Include the above in your HEAD tag ---------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"/>
+<!-- Include for modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+background-image: url('http://getwallpapers.com/wallpaper/full/a/6/2/311486.jpg');
+background-position: bottom;
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+#barra_navegacao {
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    height: 50px;
+}
+
+.container{
+align-content: center;
+}
+
+.form-row {
+    padding: 15px !important;
+}
+
+.form-row:hover {
+    padding: 15px !important;
+}
+
+.form-group {
+    padding: 15px !important;
+}
+
+.form-group:hover {
+    padding: 15px !important;
+}
+
+.card{
+height: 250px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.5) !important;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: rgb(31, 194, 72) !important;
+    border-color: rgb(31, 194, 72) !important;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: rgb(31, 194, 72) !important;
+    border-color: rgb(31, 194, 72) !important;
+}
+
