@@ -37,11 +37,11 @@
             </div>
         </div>
     </div>
-<div class="container-fluid">
-    <form class="row" method="POST" data-toggle="validator" role="form" id="myForm" name="myForm">
-        <div class="col-12 col-lg-4">
-            <fieldset>
-
+<div class="container">
+    <form action="mailto:jardel82007@hotmail.com" method="POST" data-toggle="validator" role="form" id="myForm" name="myForm">
+        <div class="d-flex bd-highlight mb-3">
+            
+            <div id="tela-obrigatorio" class="mr-auto p-2 bd-highlight">
                 <!-- Form Name -->
                 <div class="form-row">
                     <legend>Cadastro de Usuário</legend>
@@ -161,6 +161,18 @@
                 </div>
 
                 <div class="form-row">
+                    <div class="col col-lg-12">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="tela-opcional" class="ml-auto p-2 bd-highlight">
+
+                <div class="form-row">
                     <h5>Cadastrar veículo agora:</h5>
                 </div>
 
@@ -249,16 +261,9 @@
                     </div>
 
                 </div>
+                
+            </div>
 
-                <div class="form-row">
-                    <div class="col col-lg-12">
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-primary">Enviar</button>
-                        </div>
-                    </div>
-                </div>
-
-            </fieldset>
         </div>
     </form>
 </div>
@@ -328,7 +333,7 @@
 
     // Validação Telefone
     $('#myForm').validator();
-    $('#id_telefone').mask("(99) 99999-9999");
+    $('#id_telefone').mask("(99)99999-9999");
     $('#id_cpf').mask("999.999.999-99");
     $('#id_cnpj').mask("99. 999. 999/9999-99");
     $('#id_ano').mask("9999");
