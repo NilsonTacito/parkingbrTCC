@@ -31,38 +31,44 @@
                     <nav class="nav">
                         <a class="nav-link active" href="index.html" id="nav1">Home</a>
                         <a class="nav-link" href="infoGestor.html" id="nav2">Seja um Parceiro</a>
-                        <a class="nav-link" href="infoSobre.html" id="nav4">Sobre</a>
+                        <a class="nav-link" href="infoSobre.html" id="nav4">Quem Somos</a>
                     </nav>
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
 <div class="container">
-    <form action="mailto:jardel82007@hotmail.com" method="POST" data-toggle="validator" role="form" id="myForm" name="myForm">
+    <form action="mailto:jardel82007@hotmail.com" method="POST" id="myForm" name="myForm"> 
+    <!-- data-toggle="validator" role="form" -->
+
+        <!---->
         <div class="d-flex bd-highlight mb-3">
-            
+            <!---->
             <div id="tela-obrigatorio" class="mr-auto p-2 bd-highlight">
-                <!-- Form Name -->
+
+                <!-- legend name -->
                 <div class="form-row">
                     <legend>Cadastro de Usuário</legend>
                 </div>
-                    
+
+                <!-- input radio "pf" and "pj" -->
                 <div class="form-row">
                     <div class="col col-lg-12">
                         <div class="form-group">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="pessoa" value="opcaoPf" id="id_pessoaFisica" checked/>
+                                <input type="radio" class="form-check-input" name="pessoa" value="opcaoPf" id="id_pessoaFisica" checked/>
                                 <label class="form-check-label" for="pessoaFisica">Pessoa Física</label>
                             </div>
-                                  
+              
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="pessoa" value="opcaoPj" id="id_pessoaJuridica"/>
+                                <input type="radio"class="form-check-input" name="pessoa" value="opcaoPj" id="id_pessoaJuridica"/>
                                 <label class="form-check-label" for="pessoaJuridica">Pessoa Jurídica</label>
                             </div>
                         </div>
                     </div>
                 </div> 
                 
+                <!-- input text "nome" -->
                 <div class="pf">
                     <div class="form-row">  
                         <div class="col col-lg-12">
@@ -74,6 +80,7 @@
                     </div>
                 </div>
 
+                <!-- input text "sobrenome" -->
                 <div class="pf">
                     <div class="form-row">  
                         <div class="col col-lg-12">
@@ -85,6 +92,7 @@
                     </div>
                 </div>
 
+                <!-- input text "cpf" -->
                 <div class="pf">
                     <div class="form-row">  
                         <div class="col col-lg-12">
@@ -96,6 +104,7 @@
                     </div>
                 </div>
 
+                <!-- input text "cnpk" -->
                 <div class="pj">
                     <div class="form-row">  
                         <div class="col col-lg-12">
@@ -163,7 +172,7 @@
                 <div class="form-row">
                     <div class="col col-lg-12">
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <button type="submit" class="btn btn-primary" onclick="enviaForm()">Enviar</button>
                         </div>
                     </div>
                 </div>
@@ -337,6 +346,13 @@
     $('#id_cpf').mask("999.999.999-99");
     $('#id_cnpj').mask("99. 999. 999/9999-99");
     $('#id_ano').mask("9999");
+</script>
+
+<script>
+    /* Alerta de campos form OK e CADASTRADO */
+    function enviaForm() {
+        alert("Cadastro feito");
+    }
 </script>
 
 </body>
