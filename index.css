@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Numans');
+@charset "utf-8";
 
 html,body{
     background-image: url(foto_fundo.jpg);
@@ -6,13 +6,6 @@ html,body{
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
-    font-family: 'Numans', sans-serif;
-}
-
-#barra_navegacao {
-    font-family: 'Roboto', sans-serif;
-    padding: 10px;
-    height: 50px;
 }
 
 .container{
@@ -91,6 +84,12 @@ input:focus{
 }
 
 /* Formatação do Menu */
+
+#barra_navegacao {
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    height: 50px;
+}
 
 .nav {
     top: 0; 
