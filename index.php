@@ -8,6 +8,8 @@
     $nome= filter_input(INPUT_POST,'nome',FILTER_SANITIZE_STRING);
     //Declaração da variável "sobrenome" para atribuir o valor do "name" do input do formulário
     $sobrenome= filter_input(INPUT_POST,'sobrenome',FILTER_SANITIZE_STRING);
+    //Declaração da variável "nomecompleto" para concatenar o nome e sobrenome
+    $nomecompleto= $nome . '' . $sobrenome;
     //Declaração da variável "cpf" para atribuir o valor do "name" do input do formulário
     $cpf= filter_input(INPUT_POST,'cpf',FILTER_SANITIZE_STRING);
     //Declaração da variável "cnpj" para atribuir o valor do "name" do input do formulário
